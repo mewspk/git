@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background: red;
+            border-radius: 50%;
+            float: left;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            color: #fff;s
+        }
+    </style>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<script>
+    window.onload=function(){
+        var oDiv=document.getElementsByTagName("div")
+        oDiv[1].onclick=function(){
+            this.style.background="green";
+        }
+        oDiv[2].onclick=function(){
+            this.style.background="yellow";
+        }
+    }
+</script>
+</body>
+</html>

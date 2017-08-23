@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width:100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+
+</head>
+<body>
+<input type="button" value="变宽" id="btn">
+<div id="box"></div>
+</body>
+</html>
+<script>
+    document.getElementById("btn").onclick=function(){
+        document.getElementById("box").style.width="200px";
+    }
+</script>
